@@ -1,0 +1,10 @@
+# Directories
+examples
+test
+
+# Intellij
+.idea
+
+# Files
+.gitignore
+Starfish.iml

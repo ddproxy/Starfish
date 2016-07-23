@@ -1,0 +1,56 @@
+{
+  "name": "starfish",
+  "version": "0.0.1",
+  "description": "Database abstraction layer for multi-database storage and features leverage.",
+  "main": "lib/starfish.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js --require test/index.js",
+    "test-watch": "npm run test -- --watch --reporter nyan",
+    "lint": "esw lib/ test/",
+    "lint-watch": "npm run lint -- --watch",
+    "cover": "istanbul cover  -x \"**example/**\" ./node_modules/mocha/bin/_mocha -- test/**/*.js --require test/index.js",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- test/**/*.js --require test/index.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "do-publish": "npm run lint && npm run cover && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddproxy/Starfish.git"
+  },
+  "keywords": [
+    "orm",
+    "data",
+    "database",
+    "abstraction"
+  ],
+  "author": "Jon West",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ddproxy/Starfish/issues"
+  },
+  "homepage": "https://github.com/ddproxy/Starfish#readme",
+  "dependencies": {
+    "mongo": "^0.1.0",
+    "mysql": "^2.11.1",
+    "pg": "^6.0.3",
+    "redis": "^2.6.2",
+    "rethink": "^1.4.0",
+    "sqlite": "^2.2.0",
+    "camel-case": "^3.0.0",
+    "glob": "^7.0.5",
+    "is-class": "0.0.4",
+    "is-plain-object": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^3.0.1",
+    "eslint-watch": "^2.1.13",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  }
+}
