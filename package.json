@@ -1,6 +1,6 @@
 {
   "name": "starfish-api",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Database abstraction layer for multi-database storage and features leverage.",
   "main": "lib/starfish.js",
   "engines": {
