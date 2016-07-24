@@ -1,16 +1,16 @@
 # Starfish
 
-[![npm](https://img.shields.io/npm/v/starfish.svg?maxAge=1000)](https://www.npmjs.com/package/starfish)
-[![dependency Status](https://img.shields.io/david/jeffijoe/starfish.svg?maxAge=1000)](https://david-dm.org/jeffijoe/starfish)
-[![devDependency Status](https://img.shields.io/david/dev/jeffijoe/starfish.svg?maxAge=1000)](https://david-dm.org/jeffijoe/starfish)
-[![Build Status](https://img.shields.io/travis/jeffijoe/starfish.svg?maxAge=1000)](https://travis-ci.org/jeffijoe/starfish)
-[![Coveralls](https://img.shields.io/coveralls/jeffijoe/starfish.svg?maxAge=1000)](https://coveralls.io/github/jeffijoe/starfish)
-[![Code Climate](https://img.shields.io/codeclimate/github/jeffijoe/starfish.svg?maxAge=1000)](https://codeclimate.com/github/jeffijoe/starfish)
-[![npm](https://img.shields.io/npm/dt/starfish.svg?maxAge=1000)](https://www.npmjs.com/package/starfish)
-[![npm](https://img.shields.io/npm/l/starfish.svg?maxAge=1000)](https://github.com/jeffijoe/starfish/blob/master/LICENSE.md)
-[![node](https://img.shields.io/node/v/starfish.svg?maxAge=1000)](https://www.npmjs.com/package/starfish)
+[![npm](https://img.shields.io/npm/v/starfish-api.svg?maxAge=1000)](https://www.npmjs.com/package/starfish-api)
+[![dependency Status](https://img.shields.io/david/jeffijoe/starfish-api.svg?maxAge=1000)](https://david-dm.org/jeffijoe/starfish-api)
+[![devDependency Status](https://img.shields.io/david/dev/jeffijoe/starfish-api.svg?maxAge=1000)](https://david-dm.org/jeffijoe/starfish-api)
+[![Build Status](https://img.shields.io/travis/jeffijoe/starfish-api.svg?maxAge=1000)](https://travis-ci.org/jeffijoe/starfish-api)
+[![Coveralls](https://img.shields.io/coveralls/jeffijoe/starfish-api.svg?maxAge=1000)](https://coveralls.io/github/jeffijoe/starfish-api)
+[![Code Climate](https://img.shields.io/codeclimate/github/jeffijoe/starfish-api.svg?maxAge=1000)](https://codeclimate.com/github/jeffijoe/starfish-api)
+[![npm](https://img.shields.io/npm/dt/starfish-api.svg?maxAge=1000)](https://www.npmjs.com/package/starfish-api)
+[![npm](https://img.shields.io/npm/l/starfish-api.svg?maxAge=1000)](https://github.com/jeffijoe/starfish-api/blob/master/LICENSE.md)
+[![node](https://img.shields.io/node/v/starfish-api.svg?maxAge=1000)](https://www.npmjs.com/package/starfish-api)
 
-Database abstraction layer for multi-database storage and feature leverage.
+Data abstraction layer for multi-database storage and feature leverage. Each data store technology has it’s strengths. Starfish lets you transparently use the strengths of each data store without losing data or availability of that data. 
 
 # Table of Contents
 
@@ -96,9 +96,11 @@ Args:
 * `options`: Options object. Required.
   - `options.name`: Optional, unique name to identify data store. Used in logs and to remove data store. Optional.
   - `options.type`: The type of data store to be added. (pg, mysql, redis, mongo, rethink, sqlite) Required.
-  - `options.host`: The hostname of the data store to be added. Defaults to localhost. Optional.
+  - `options.user`: The user of the data store to be added. Defaults to `starfish`. Optional.
+  - `options.host`: The hostname of the data store to be added. Defaults to `localhost`. Optional.
   - `options.port`: The port of the data store to be added. Defaults to data store's default port. Optional.
-  - `options.database`: The database to the data store to be added. Default is 'starfish'. Optional.
+  - `options.password`: The password of the data store to be added. Defaults to `starfish`. Optional.
+  - `options.database`: The database to the data store to be added. Defaults to `starfish`. Optional.
 
 ### `insert()`
 
