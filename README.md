@@ -1,13 +1,13 @@
 # Starfish
 
 [![npm](https://img.shields.io/npm/v/starfish-api.svg?maxAge=1000)](https://www.npmjs.com/package/starfish-api)
-[![dependency Status](https://img.shields.io/david/ddproxy/starfish-api.svg?maxAge=1000)](https://david-dm.org/ddproxy/starfish-api)
-[![devDependency Status](https://img.shields.io/david/dev/ddproxy/starfish-api.svg?maxAge=1000)](https://david-dm.org/ddproxy/starfish-api)
-[![Build Status](https://img.shields.io/travis/ddproxy/starfish-api.svg?maxAge=1000)](https://travis-ci.org/ddproxy/starfish-api)
-[![Coveralls](https://img.shields.io/coveralls/ddproxy/starfish-api.svg?maxAge=1000)](https://coveralls.io/github/ddproxy/starfish-api)
-[![Code Climate](https://img.shields.io/codeclimate/github/ddproxy/starfish-api.svg?maxAge=1000)](https://codeclimate.com/github/ddproxy/starfish-api)
+[![dependency Status](https://img.shields.io/david/ddproxy/starfish.svg?maxAge=1000)](https://david-dm.org/ddproxy/starfish)
+[![devDependency Status](https://img.shields.io/david/dev/ddproxy/starfish.svg?maxAge=1000)](https://david-dm.org/ddproxy/starfish)
+[![Build Status](https://img.shields.io/travis/ddproxy/starfish.svg?maxAge=1000)](https://travis-ci.org/ddproxy/starfish)
+[![Coveralls](https://img.shields.io/coveralls/ddproxy/starfish.svg?maxAge=1000)](https://coveralls.io/github/ddproxy/starfish)
+[![Code Climate](https://img.shields.io/codeclimate/github/ddproxy/starfish.svg?maxAge=1000)](https://codeclimate.com/github/ddproxy/starfish)
 [![npm](https://img.shields.io/npm/dt/starfish-api.svg?maxAge=1000)](https://www.npmjs.com/package/starfish-api)
-[![npm](https://img.shields.io/npm/l/starfish-api.svg?maxAge=1000)](https://github.com/ddproxy/starfish-api/blob/master/LICENSE.md)
+[![npm](https://img.shields.io/npm/l/starfish.svg?maxAge=1000)](https://github.com/ddproxy/starfish/blob/master/LICENSE.md)
 [![node](https://img.shields.io/node/v/starfish-api.svg?maxAge=1000)](https://www.npmjs.com/package/starfish-api)
 
 Data abstraction layer for multi-database storage and feature leverage. Each data store technology has it’s strengths. Starfish lets you transparently use the strengths of each data store without losing data or availability of that data. 
